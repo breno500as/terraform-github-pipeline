@@ -6,15 +6,15 @@ env:
 
 jobs:
   terraform_apply: 
-  name: Terraform Apply
-  runs-on: ubuntu-latest
-  defaults:
-    run:
-     shell: bash
-  steps:
-  - name: Checkout 
-    uses: actions/checkout@v4
-  - name: Terraform Apply 
-    run: |
-      terraform init 
-      terraform apply -auto-approve
+   name: Terraform Apply
+   runs-on: ubuntu-latest
+   defaults:
+     run:
+      shell: bash
+   steps:
+   - name: Checkout 
+     uses: actions/checkout@v4
+   - name: Terraform Apply 
+     run: |
+       terraform init 
+       terraform apply -auto-approve
