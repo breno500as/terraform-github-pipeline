@@ -24,4 +24,4 @@ jobs:
        terraform apply plan.out
    - name: Terraform Destroy 
      run: |
-       terraform destroy
+       terraform destroy -auto-approve
