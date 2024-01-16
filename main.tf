@@ -10,7 +10,7 @@ terraform {
 
   backend "s3" {
     bucket = "breno500as-terraform-remote-state"
-    key    = "aws-vpc/terraform.tfstate"
+    key    = "aws-vpc-github-pipeline/terraform.tfstate"
     region = "us-east-1"
   }
 
