@@ -6,16 +6,16 @@ env:
 
 jobs:
   terraform_plan: 
-  name: Terraform Plan
-  runs-on: ubuntu-latest
-  defaults:
-    run:
-     shell: bash
-  steps:
-  - name: Checkout 
-    uses: actions/checkout@v4
-  - name: Terraform Plan 
-    run: |
-      terraform init
-      terraform validate
-      terraform plan
+   name: Terraform Plan
+   runs-on: ubuntu-latest
+   defaults:
+     run:
+      shell: bash
+   steps:
+   - name: Checkout 
+     uses: actions/checkout@v4
+   - name: Terraform Plan 
+     run: |
+       terraform init
+       terraform validate
+       terraform plan
